@@ -1,1 +1,1 @@
-This project aim to creat a program that use Twitter's API to pull content with certain tag that specified by user from it.
+This project aim to creat a crawler that gather different data from Twitter based on users need.
