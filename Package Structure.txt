@@ -1,0 +1,37 @@
+data → search_by_raw_query → search_timeline → timeline → instructions → entries(start from here)
+
+entryID = begin of a tweeet section
+content = what's inside current tweet
+	itemContent 
+		tweet_results
+			result
+				core = information about account
+					result
+						created_at = user created time
+						description = user description
+						followers_count = follower_count
+						friends_count = friends_count
+						location = location
+						name = displayed name
+						screen_name = username(#)
+				legacy = information about tweet
+					entities
+						media = what's inside a tweet
+							media_url_https = media link
+							type = media type
+							hashtag = hashtag in tweet
+					extended_entities = current is same with entities
+					text = text in current tweet
+
+
+cursor = infinite scroll
+	value = data needed to request for next package
+
+
+
+
+
+JSON path to be excluded
+	user_mentions
+	features
+	professional
